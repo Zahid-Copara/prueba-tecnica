@@ -1,0 +1,84 @@
+.search-table-container {
+    margin: 70px;
+}
+  
+.search-input {
+    width: 15%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    border-color: rgb(142, 136, 136);
+    border-width: 1px;
+}
+
+.data-table thead th {
+    text-align: center;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+  
+.data-table th, .data-table td {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    color: rgb(69, 69, 73);
+    font-size: 12px;
+}
+  
+.data-table th {
+    background-color: #f2f2f2;
+}
+
+.table-footer{
+    margin-top: 15px;
+}
+
+.container {
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde sólido de color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno para separar los elementos del borde */
+  }
+
+.textData {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.select-box {
+    width: 60px;
+    text-align: center;
+    border-radius: 3px;
+    border-color: rgb(142, 136, 136);
+    float: right;
+}
+
+.add-button {
+    justify-content: flex-end;
+    padding: 5px 10px;
+    height: 40px;
+    background-color: rgb(255, 221, 0);
+    font-weight: bold;
+    border-color: rgb(255, 221, 0);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Menu */
+
+#selectMenu {
+    background: url('/assets/icon_drop.png') no-repeat;
+    appearance: none;
+    -webkit-appearance: none;
+    background-position: center;
+    background-size: 30px 30px;
+    cursor: pointer;
+    border: none;
+    color: transparent;
+    padding-left: 20px;
+    outline: none;
+}

@@ -1,0 +1,62 @@
+<div class="search-table-container">
+    <button style="float: right;" [routerLink]="['/productoFinancieroLista']" class="add-button">Regresar</button>
+    <p><tr></tr></p>
+    <p><tr></tr></p>
+    <p><tr></tr></p>
+    <div class="container">
+        <div class="header">Formulario de Registro</div>
+        <hr>
+        <div class="form-body">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="id">ID</label>
+                    <tr></tr>
+                    <input type="text" id="id" [(ngModel)]="id" class="input" placeholder="ID" required (blur)="idBlur($event)" [ngClass]="{'error': idErrorState}" disabled="true">
+                    <tr class="error-message" *ngIf="idErrorState">{{idErrorMessage}}</tr>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <tr></tr>
+                    <input type="text" id="nombre" [(ngModel)]="nombre" class="input" placeholder="Tarjeta Crédito" required (blur)="nameBlur($event)" [ngClass]="{'error': nameErrorState}">
+                    <tr class="error-message" *ngIf="nameErrorState">{{nameErrorMessage}}</tr>
+                </div>
+            </div>
+        </div>
+        <div class="form-body">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <tr></tr>
+                    <input type="text" id="descripcion" [(ngModel)]="descripcion" class="input" placeholder="Descripción" required (blur)="descriptionBlur($event)" [ngClass]="{'error': descriptionErrorState}">
+                    <tr class="error-message" *ngIf="descriptionErrorState">{{descriptionErrorMessage}}</tr>
+                </div>
+                <div class="form-group">
+                    <label for="logo">Logo</label>
+                    <tr></tr>
+                    <input type="text" id="logo" class="input" [(ngModel)]="logo" placeholder="Logo" required (blur)="logoBlur($event)" [ngClass]="{'error': logoErrorState}">
+                    <tr class="error-message" *ngIf="logoErrorState">{{logoErrorMessage}}</tr>
+                </div>
+            </div>
+        </div>
+        <div class="form-body">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fechaLiberacion">Fecha Liberación</label>
+                    <tr></tr>
+                    <input type="date" id="fechaLiberacion" [(ngModel)]="fechaLiberacion" class="input" placeholder="Fecha Liberación" (change)="actualizarFechaRevision()" [ngClass]="{'error': logoErrorState}">
+                    <tr class="error-message" *ngIf="fechaLiberacionErrorState">{{fechaLiberacionErrorMessage}}</tr>
+                </div>
+                <div class="form-group">
+                    <label for="fechaRevision">Fecha Revisión</label>
+                    <tr></tr>
+                    <input type="date" id="fechaRevision"  [(ngModel)]="fechaRevision" class="input" placeholder="Fecha Revisión" [disabled]="true">
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="button-restart" (click)="onRestart()">Reiniciar</button>
+            <button type="button" class="button-send" (click)="onSend()">Enviar</button>
+        </div>
+    </div>
+</div>
+  
