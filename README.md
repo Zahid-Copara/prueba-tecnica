@@ -1,6 +1,9 @@
+Run 'npm install' if your having trouble while excecuting the program.
+
 # PruebaTecnica
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+And TypeScript 5.1.6
 
 ## Development server
 
